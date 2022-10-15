@@ -1,0 +1,38 @@
+.work {
+    padding-bottom: 94px;
+}
+.work__title {
+    @include font (36px, 700, 1.17);
+
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+}
+.work__list {
+    display: flex;
+}
+.work__item {
+    position: relative;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+.work__img {
+    display: block;
+    max-width: 100%;
+}
+.work__subtitle {
+    @extend %centred;
+
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: inline-flex;
+    bottom: 0;
+
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: var(--white-text);
+}

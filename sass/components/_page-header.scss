@@ -1,0 +1,75 @@
+.header {
+    align-items: center;
+    border-bottom: 1px solid var(--border-header);
+}
+
+.main-nav {
+    @extend %centred;
+}
+
+.navigation__link--current {
+    color: var(--accent);
+    display: block;
+    position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent);
+            border-radius: 2px;
+            bottom: -1px;
+        }
+}
+.navigation {
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.navigation__link {
+    display: block;
+    padding: 32px 0px;
+    text-decoration: none;
+    color: var(--main-text);
+    transition: color var(--time-function);
+        &:hover, &:focus {
+            color: var(--accent)
+        };
+}
+.navigation__list {
+    display: flex;
+        & :not(:last-child) {
+            margin-right: 50px;
+        }
+}
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+.contact__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.contact__link {
+    @include font(14px, 500, 1.143);
+    @extend %centred;
+
+    color: var(--secondary-text);
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    padding: 32px 0px;
+    transition: color var(--time-function);
+    &:hover, &:focus{
+        color: var(--accent)
+        };
+    &:last-child {
+        margin-right: 0;
+    };
+}
+.contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

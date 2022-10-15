@@ -1,0 +1,34 @@
+.benefit {
+    padding: 94px 0;
+}
+.benefit__list {
+    display: flex;
+}
+.benefit__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.benefits__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+}
+.benefit__title {
+    @include font (14px, 700, 1.143);
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  
+}
+.benefits__description {
+    width: 270px;
+    line-height: 1.71;
+    color: var(--secondary-text);
+}

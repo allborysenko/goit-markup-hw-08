@@ -1,0 +1,15 @@
+.logo {
+    @include font (26px, 700, 1.19);
+
+    margin-right: 93px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: var(--black-text);
+}
+.logo__title {
+    color: var(--accent)
+}
+.footer__logo{
+    color: var(--white-text);
+}
