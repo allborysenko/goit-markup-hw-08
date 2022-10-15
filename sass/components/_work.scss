@@ -1,6 +1,18 @@
+
+
+.work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    } 
+    @include desktop {
+        display: flex;   
+    }
+}
+
 .work {
     padding-bottom: 94px;
 }
+
 .work__title {
     @include font (36px, 700, 1.17);
 
@@ -8,19 +20,24 @@
     margin-top: 0;
     text-align: center;
 }
+
 .work__list {
     display: flex;
 }
+
 .work__item {
     position: relative;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
+
 .work__img {
     display: block;
     max-width: 100%;
 }
+
 .work__subtitle {
     @extend %centred;
 
