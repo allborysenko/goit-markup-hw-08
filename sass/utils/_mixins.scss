@@ -3,3 +3,29 @@
     font-weight: $fw;
     line-height: $lh;
 }
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+       @content; 
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin deskop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (mmin-device-pixel-ratio: 2),
+        (min-resoluion: 192dpi),
+        (min-resoluion: 2dppx) {
+        @content;   
+    }
+}
