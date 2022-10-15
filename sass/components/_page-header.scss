@@ -4,7 +4,15 @@
 }
 
 .main-nav {
-    @extend %centred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .navigation__link--current {
@@ -23,9 +31,14 @@
         }
 }
 .navigation {
-    font-weight: 500;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
+    display: none;
+
+    @include tablet {
+        display: block;
+        font-weight: 500;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+    }
 }
 
 .navigation__link {
@@ -44,30 +57,64 @@
             margin-right: 50px;
         }
 }
+.mobil__menu {
+    display: block;
+
+    @include tablet {
+        display: none;
+    }
+}
 .contact {
-    display: flex;
-    margin-left: auto;
-}
-.contact__item:not(:first-child) {
-    margin-left: 50px;
-}
+    display: none;
 
+    @include tablet {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+       
+    }
+    @include desktop {
+        display: flex;
+        margin-left: auto;
+        padding: 32px 0;
+    }
+}
 .contact__link {
-    @include font(14px, 500, 1.143);
-    @extend %centred;
-
-    color: var(--secondary-text);
-    letter-spacing: 0.02em;
-
-    text-decoration: none;
-    padding: 32px 0px;
+    @include tablet {
+        color: var(--secondary-text);
+        text-decoration: none;
+    }
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.contact__link{
     transition: color var(--time-function);
-    &:hover, &:focus{
-        color: var(--accent)
-        };
-    &:last-child {
-        margin-right: 0;
-    };
+    &:hover, &:focus {
+        color: var(--accent);
+    }
+}
+
+
+@include tablet {
+    .contact__item:not(:last-child) {
+        margin-bottom: 10px;
+        }
+}
+@include desktop {
+    .contact__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@include desktop {
+    .contact__item:not(:first-child){
+        margin-left: 50px;
+    }
 }
 .contact__icon {
     fill: currentColor;

@@ -1,11 +1,18 @@
 .logo {
-    @include font (26px, 700, 1.19);
-
-    margin-right: 93px;
+    @include font (24px, 700, 1.167);
+    padding: 16px 0;
     display: block;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: var(--black-text);
+
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.192;
+        margin-right: 93px;
+
+    }
 }
 .logo__title {
     color: var(--accent)
