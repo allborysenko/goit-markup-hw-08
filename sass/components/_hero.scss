@@ -9,29 +9,29 @@
     max-width: 480px;
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../.. //images/hero/hero-mob-1x.jpg");
+    url("../images/hero-mob-1x.jpg");
     @include retina{
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../.. //images/hero/hero-mob-2x.jpg");
+        url("../images/hero-mob-2x.jpg");
     }
 
     @include tablet {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../.. //images/hero/hero-tab-1x.jpg");
+        url("../images/hero-tab-1x.jpg");
         max-width: 768px;
         @include retina {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url("../.. //images/hero/hero-tab-2x.jpg");
+                url("../images/hero-tab-2x.jpg");
             }
     }
     
     @include desktop {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../.. //hero/hero-deck-1x.jpg");
+        url("../images/hero-deck-1x.jpg");
         max-width: 1600px;
         @include retina {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url("../.. //images/hero/hero-deck-2x.jpg");
+                url("../images/hero-deck-2x.jpg");
             }
     }
 }
