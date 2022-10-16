@@ -1,29 +1,80 @@
-.clients {
-    padding: 94px 0px;
+// .clients {
+//     padding: 94px 0px;
+// }
+// .cliens__title {
+//     font-size: 36px;
+//     line-height: 1.167;
+//     text-align: center;
+//     margin-bottom: 50px;
+// }
+// .clients__list {
+//     display: flex;
+//     gap: 30px;
+// }
+// .clients__item {
+//     max-width: 170px;
+// }
+
+
+
+.clients{
+    padding: 60px 0;
+
+    @include desktop {
+        padding: 94px 0px;
+    }
 }
-.cliens__title {
-    font-size: 36px;
-    line-height: 1.167;
+
+.cliens__title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
     margin-bottom: 50px;
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.167;
+        margin-bottom: 50px;
+    }
+
+
 }
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .clients__item {
-    max-width: 170px;
+    max-width: 210px;
+    @include tablet {
+        max-width: 226px;
+    }
+    @include desktop {
+        max-width: 170px;
+    }
 }
 .client__link {
     display: flex;
-    padding: 16px 32px;
+    padding: 16px 52px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border-color var(--time-function);
-        &:hover, &:focus {
-            border-color: var(--accent);
-        }
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent);
+    }
+
+    @include tablet {
+        padding: 16px 60px;
+
+    }
+    @include desktop {
+        padding: 16px 32px;
+    }
 }
+
 .client__logo {
     fill: #AFB1B8;
     transition: fill var(--time-function);
