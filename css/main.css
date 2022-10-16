@@ -693,4 +693,39 @@ body {
 
 .client__link:focus .client__logo {
   fill: var(--accent);
+}
+
+.footer {
+  padding: 60px 0px;
+  background-color: var(--hero-bgc);
+}
+
+.footer-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  color: var(--white-text);
+  text-decoration: none;
+  line-height: 1.71;
+  -webkit-transition: color var(--time-function);
+  transition: color var(--time-function);
+}
+
+.address__link {
+  color: var(--footer-address);
+  text-decoration: none;
+  line-height: 1.71;
+  -webkit-transition: color var(--time-function);
+  transition: color var(--time-function);
+}
+.address__link:hover, .address__link:focus {
+  color: var(--accent);
+}
+
+.address__link--white {
+  color: var(--white-text);
 }/*# sourceMappingURL=main.css.map */
