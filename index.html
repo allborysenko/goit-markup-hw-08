@@ -128,9 +128,15 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item list">
-                    <img class="team__photo"
-                    src="./images/igor-demiyanenko.jpg" 
-                    alt="Product Designer">
+                    <picture>
+                        <source srcset="../images/480/demiyanenko-mob-1x.jpg 1x, ../images/480/demiyanenko-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                        <source srcset="../images/768/demiyanenko-tab-1x.jpg 1x, ../images/768/demiyanenko-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="../images/1200/demiyanenko-desk-1x.jpg 1x, ../images/1200/demiyanenko-desk-2x.jpg 2x" media="(min-width: 1200px)" />
+                       
+                        <img src="../images/480/demiyanenko-mob-1x.jpg"alt="Product Designer"/>
+
+                    </picture>
+                    
                     <div class="card">
                         <h3 class="card__title">Ігор Дем'яненко</h3>
                         <p class="card__subtitle">Product Designer</p>
