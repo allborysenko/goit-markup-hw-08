@@ -1,48 +1,114 @@
-.team {
-    background-color: var(--bgc-team);
-    padding: 94px 0px;
-}
-.team__title {
-    @include font (36px, 700, 1.17);
+// .team {
+//     background-color: var(--bgc-team);
+//     padding: 94px 0px;
+// }
+// .team__title {
+//     @include font (36px, 700, 1.17);
 
-    margin-top: 0px;
-    margin-bottom: 50px;
-    text-align: center;
+//     margin-top: 0px;
+//     margin-bottom: 50px;
+//     text-align: center;
+// }
+// .team__list {
+//     display: flex;
+//     text-align: center;
+// }
+// .team__item {
+//     height: 428px;
+//     background-color: var(--background-color);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     &:not(:last-child) {
+//             margin-right: 30px;
+//         }
+// }
+// .card {
+//     padding: 30px 0px;
+//     text-align: center;
+// }
+// .card__title {
+//     @include font (16px, 500, 1.19);
+
+//     margin-bottom: 10px;
+//     margin-top: 0;
+// }
+// .card__subtitle {
+//     font-size: 16px;
+//     line-height: 1.19;
+//     color: var(--secondary-text);
+//     margin-bottom: 16px;
+// }
+
+
+
+.team{
+    padding: 60px 0;
+    background-color: var(--bgc-team);
+
+    @include desktop {
+        padding: 60px 0;
+    }
 }
-.team__list {
-    display: flex;
+.team__photo {
+    width: 270px;
+}
+
+.team__title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
+    color: var(--main-text);
+    margin-bottom: 30px;
+
+    @include tablet {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+    }
+
 }
 .team__item {
-    height: 428px;
+    outline: 1px solid red;
+    height: 622px;
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+
+    @include tablet {
+        height: 536px;
+    }
+
+    @include desktop {
+        height: 428px;
+    }
 }
-.card {
-    padding: 30px 0px;
+
+.card__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875x;
+    color: var(--main-text);
+    margin-bottom: 10px;
     text-align: center;
 }
-.card__title {
-    @include font (16px, 500, 1.19);
 
-    margin-bottom: 10px;
-    margin-top: 0;
-}
 .card__subtitle {
     font-size: 16px;
     line-height: 1.19;
     color: var(--secondary-text);
     margin-bottom: 16px;
+    text-align: center;
 }
 .social {
     @extend %centred;
-    
+
     gap: 10px;
 }
+
 .social__link {
     @extend %centred;
 
@@ -51,14 +117,18 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--time-function);
-        &:hover, &:focus {
-            background-color: var(--accent);
-        }
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+    }
 }
+
 .social__icon {
     fill: #AFB1B8;
     transition: fill var(--time-function);
 }
+
 .social__link:hover .social__icon {
     fill: var(--white-text);
 }
