@@ -1,33 +1,53 @@
-.footer__social__icon {
-        fill: var(--white-text);
+
+.sing-up{
+    margin-bottom: 60px;
+    @include desktop {
+        margin-bottom: 0;
     }
+}
+
 .footer-сall {
-    @include font (14px, 700, 1.143);
-     
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+
     color: var(--white-text);
 
-     text-transform: uppercase;
-     margin-bottom: 20px;
- }
- .subscribe {
-     margin-left: 93px;
- }
- .submit {
-     display: flex;
- }
- .submit__input {
-     background: none;
-     width: 358px;
-     height: 50px;
-     border: 1px solid rgba(255, 255, 255, 0.3);
-     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-     color: var(--white-text);
-     border-radius: 4px;
-     padding-left: 16px;
-     outline: none;
+    margin-bottom: 20px;
+    @include desktop {
+        text-align: start;
+    }
+
+}
+.subscribe {
+    @include desktop {
+        margin-left: 93px;
+    }
+}
+.submit {
+    @include desktop {
+        display: flex;
+    }
+}
+.submit__input {
+        margin-bottom: 20px;
+        background: none;
+        width: 450px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        color: var(--white-text);
+        border-radius: 4px;
+        outline: none;
+
         &:focus {
             border-color: var(--white-text);
             color: var(--white-text);
         }
- }
+        @include desktop {
+            width: 358px;
+        }
+    }
 
