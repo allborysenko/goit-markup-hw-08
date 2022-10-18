@@ -15,24 +15,80 @@
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.2);
 }
+
+
+
+// .modal {
+//     padding: 40px;
+//     width: 528px;
+//     height: 581px;
+//     background-color: var(--background-color);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 4px;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%) scale(1);
+//     transition: transform var(--time-function);
+
+    
+// }
+
 .modal {
     padding: 40px;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
     position: absolute;
+    border-radius: 4px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--time-function);
-}
-.modal__title {
-    @include font (20px, 700, 1.15);
 
+    @include tablet {
+    width: 450px;
+    height: 609px;
+    }
+
+    @include desktop {
+    width: 528px;
+    height: 609px;
+        
+    }
+
+}
+
+
+// .modal__title {
+//     @include font (20px, 700, 1.15);
+
+//     text-align: center;
+//     margin-bottom: 12px;
+// }
+// .modal__form {
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 10px;
+//         .modal__input {width: 100%;
+//             height: 40px;
+//             border: 1px solid rgba(33, 33, 33, 0.2);
+//             border-radius: 4px;
+//             padding-left: 42px;
+//             outline: none;
+//             transition: border var(--time-function);
+
+
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 12px;
+
+    @include desktop {
+        line-height: 1.15;
+    }
 }
 .modal__form {
     display: flex;
@@ -45,9 +101,12 @@
             padding-left: 42px;
             outline: none;
             transition: border var(--time-function);
-
         }
-}
+    }
+
+
+//         }
+// }
 .modal__label {
     margin-bottom: 4px;
     font-size: 12px;
@@ -115,6 +174,13 @@
 .accept__label {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.167;
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.714;
+    }
+
 
 }
  .accept__input:checked +.checkbox {

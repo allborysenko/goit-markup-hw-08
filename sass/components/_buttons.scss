@@ -1,20 +1,3 @@
-// .order-bnt {
-//     @include font (16px, 700, 1.875);
-
-//     padding: 10px 32px;
-//     border-radius: 4px;
-//     cursor: pointer;
-//     background-color: var(--accent);
-//     font-family: 'Roboto', sans-serif;
-//     color: var(--white-text);
-//     letter-spacing: 0.06em;
-//     border-color: transparent;
-//     transition: background-color var(--time-function);
-//         &:hover, &:focus, &:active {
-//             background-color: var(--accent-hover);
-//             }
-//          }
-
 .order-bnt {
     display: block;
     @include font (16px, 700, 1.875);
@@ -38,52 +21,49 @@
     }
 }
 
-
-
-
-// .modal__close-button {
-//     @extend %centred;
+.modal__close-button {
+    @extend %centred;
     
-//     position: absolute;
-//     right: 8px;
-//     top: 8px;
-//     background-color: var(--background-color);
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     border-radius: 50%;
-//     width: 30px;
-//     height: 30px;
-//     fill: var(--black-text);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: var(--background-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    fill: var(--black-text);
 
-//     cursor: pointer;
-// }
-// .modal__icon-close {
-//     transition: fill var(--time-function);
-// }
-// .modal__close-button:hover .modal__icon-close {
-//     fill: var(--accent);
-// }
-// .modal__close-button:focus .modal__icon-close {
-//     fill: var(--accent);
-// }
-// .modal__btn {
-//     @include font (16px, 700, 1.875);
-//     @extend %centred;
+    cursor: pointer;
+}
+.modal__icon-close {
+    transition: fill var(--time-function);
+}
+.modal__close-button:hover .modal__icon-close {
+    fill: var(--accent);
+}
+.modal__close-button:focus .modal__icon-close {
+    fill: var(--accent);
+}
+.modal__btn {
+    @include font (16px, 700, 1.875);
+    @extend %centred;
 
-//     padding: 10px 52px;
-//     background-color: var(--accent);
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     letter-spacing: 0.06em;
-//     color: var(--white-text);
+    padding: 10px 52px;
+    background-color: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    color: var(--white-text);
 
-//     border: none;
-//     margin: 0 auto;
-//     cursor: pointer;
-//     transition: background-color var(--time-function);
-//         &:focus, &:hover {
-//             background-color: var(--accent-hover);
-//         }
-// }
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color var(--time-function);
+        &:focus, &:hover {
+            background-color: var(--accent-hover);
+        }
+}
 
 // .filter {
 //     @extend %centred;
@@ -115,33 +95,6 @@
 // .filter__btn--all {
 //     padding: 6px 25px;
 // }
-
-// .submit__btn {
-//     @include font (16px, 700, 1.875);
-//     @extend %centred;
-
-//     background-color: var(--accent);
-//     padding: 10px 28px;
-//     margin-left: 10px;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     border: none;
-//     border-color: transparent;
-//     letter-spacing: 0.06em;
-//     color: var(--white-text);
-//     cursor: pointer;
-//     transition: background-color var(--time-function);
-
-//         &:hover, &:focus {
-//             background-color: var(--accent-hover);
-//         }
-// }
-
-// .submit__icon {
-//     margin-left: 10px;
-//     display: block;
-// }
-
 
 .submit__btn {
     height: 50px;
