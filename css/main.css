@@ -1103,6 +1103,7 @@ body {
   height: 796px;
   width: 480px;
   background-color: white;
+  position: relative;
 }
 
 .mobile-menu__item:last-child {
