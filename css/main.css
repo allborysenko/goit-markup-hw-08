@@ -583,6 +583,7 @@ body {
 }
 
 .team {
+  min-width: 480px;
   padding: 60px 0;
   background-color: var(--bgc-team);
 }
@@ -781,6 +782,7 @@ body {
 }
 
 .footer {
+  min-width: 480px;
   padding: 60px 0px;
   background-color: var(--hero-bgc);
 }
