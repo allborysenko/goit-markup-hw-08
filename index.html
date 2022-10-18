@@ -19,12 +19,7 @@
 <header class="header">
     <div class="container main-nav">
         <a href="./index.html" class="logo"><span class="logo__title">Web</span>Studio</a>
-        <!-- <div class="mobil__menu">
-            <svg class="mobil__icon" width="40" height="40">
-                <use href="./images/icon.svg#icon-mobil-menu"></use>
-            </svg>
-        </div> -->
-        <button type="button" class="mobil__menu">
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="mobil__icon" width="40" height="40">
                 <use href="./images/icon.svg#icon-mobil-menu"></use>
             </svg>
@@ -52,8 +47,8 @@
             </li>
         </ul>
     </div>
-    <div class="container mobile-menu">
-        <button type="button" class="modal__close-button">
+    <div class="container menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="modal__close-button js-close-menu">
             <svg class="modal__icon-close" width="18px" height="18px">
                 <use href="./images/icon.svg#icon-close-btn"></use>
             </svg>
@@ -524,7 +519,10 @@
     </form>
 </div>
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

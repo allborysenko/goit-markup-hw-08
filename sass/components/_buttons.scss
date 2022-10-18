@@ -33,6 +33,9 @@
     width: 30px;
     height: 30px;
     fill: var(--black-text);
+    @include tablet {
+        display: none;
+    }
 
     cursor: pointer;
 }
@@ -65,37 +68,6 @@
         }
 }
 
-// .filter {
-//     @extend %centred;
-
-//     margin-bottom: 50px;
-// }
-
-// .filter__item:not(:last-child) {
-//     margin-right: 8px;
-// }
-// .filter__btn {
-//     @include font (16px, 500, 1.62);
-
-//     font-family: inherit;
-//     cursor: pointer;
-
-//     text-align: center;
-//     background-color: var(--bgc-team);
-//     border-radius: 4px;
-//     padding: 6px 22px;
-//     border: none;
-//     transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function);
-//         &:hover, &:focus {
-//             background-color: var(--accent);
-//                 color: var(--white-text);
-//                 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//         }
-// }
-// .filter__btn--all {
-//     padding: 6px 25px;
-// }
-
 .submit__btn {
     height: 50px;
     margin: 0 auto;
@@ -127,11 +99,41 @@
     }
     
 }
-
 .submit__icon {
     margin-left: 12px;
     display: block;
     @include desktop {
         margin-left: 10px;
     }
+}
+// *******
+.filter {
+    @extend %centred;
+
+    margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+.filter__btn {
+    @include font (16px, 500, 1.62);
+
+    font-family: inherit;
+    cursor: pointer;
+
+    text-align: center;
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
+    transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function);
+        &:hover, &:focus {
+            background-color: var(--accent);
+                color: var(--white-text);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+.filter__btn--all {
+    padding: 6px 25px;
 }
