@@ -1,9 +1,7 @@
 .order-bnt {
-    display: block;
     @include font (16px, 700, 1.875);
-    margin: auto;
+
     padding: 10px 24px;
-    
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--accent);
@@ -33,9 +31,7 @@
     width: 30px;
     height: 30px;
     fill: var(--black-text);
-    @include tablet {
-        display: none;
-    }
+   
 
     cursor: pointer;
 }

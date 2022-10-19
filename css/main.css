@@ -275,6 +275,7 @@ body {
 }
 
 .hero-section {
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
@@ -307,6 +308,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/1200/hero-deck-1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/1200/hero-deck-1x.jpg");
     max-width: 1600px;
@@ -340,11 +343,9 @@ body {
 }
 
 .order-bnt {
-  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
-  margin: auto;
   padding: 10px 24px;
   border-radius: 4px;
   cursor: pointer;
@@ -376,11 +377,6 @@ body {
   height: 30px;
   fill: var(--black-text);
   cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .modal__close-button {
-    display: none;
-  }
 }
 
 .modal__icon-close {
@@ -676,14 +672,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    height: 536px;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    height: 428px;
     width: calc((100% - 120px) / 4);
   }
 }
@@ -897,6 +891,10 @@ body {
   color: var(--white-text);
 }
 
+.footer__social__icon {
+  fill: #fff;
+}
+
 .sing-up {
   margin-bottom: 60px;
 }
@@ -937,6 +935,7 @@ body {
 
 .submit__input {
   margin-bottom: 20px;
+  padding-left: 15px;
   background: none;
   width: 450px;
   height: 50px;
@@ -954,6 +953,7 @@ body {
 @media screen and (min-width: 1200px) {
   .submit__input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -981,7 +981,6 @@ body {
 .modal {
   padding: 40px;
   width: 450px;
-  height: 609px;
   background-color: var(--background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -999,17 +998,16 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 609px;
   }
 }
 
 .modal__title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -1111,6 +1109,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--secondary-text);
   line-height: 1.714;
   margin-bottom: 30px;
@@ -1136,6 +1137,10 @@ body {
 .accept__input:checked + .checkbox {
   background-color: var(--accent);
   border: 2px solid var(--accent);
+}
+
+.accept__agree {
+  margin-left: 5px;
 }
 
 .menu-container {
@@ -1279,6 +1284,11 @@ body {
 }
 
 .portfolio__link:hover .portfolio__dicription {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio__link:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
