@@ -44,11 +44,15 @@
 
 .mobile-contact__link{
     font-weight: 500;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--accent);
+
+    @include mobile {
+        font-size: 34px;
+    }
 }
 .mobile-contact__link--mail{
     font-weight: 500;
@@ -73,20 +77,30 @@
 }
 .mobile-social__item{
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
+    padding-right: 5px;
     &:not(:last-child){
-        margin-right: 10px;
+        margin-right: 5px;
         }
+    
+    @include mobile {
+        padding-right: 10px;
     }
+}
 
 .mobile-social{
     display: flex;
 }
 .mobile-social__link{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--accent);
+
+    @include mobile {
+        font-size: 18px;}
 }
+        
+
+
