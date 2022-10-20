@@ -17,8 +17,8 @@
 }
 
 .modal {
-    padding: 40px;
-    width: 450px;
+    padding: 30px;
+    width: 300px;
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -27,7 +27,11 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--time-function);
-
+    @include mobile {
+        width: 450px;
+        padding: 40px;
+    }
+    
     @include tablet {
     width: 450px;
     }
@@ -132,8 +136,11 @@
 .accept__label {
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1.167;
+    @include mobile {
+        font-size: 12px;
+    }
     @include desktop {
         font-size: 14px;
         line-height: 1.714;
