@@ -7,13 +7,17 @@
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
-    min-width: 480px;
+    
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/480/hero-mob-1x.jpg");
     @include retina{
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/480/hero-mob-2x.jpg");
+    }
+
+    @include mobile {
+        min-width: 480px;
     }
 
     @include tablet {
@@ -40,7 +44,7 @@
 }
 
 .hero {
-    width: 360px;
+    
     margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
@@ -50,6 +54,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-text);
+
+    @include mobile{
+        width: 360px;
+    }
 
      @include desktop {
         width: 696px;

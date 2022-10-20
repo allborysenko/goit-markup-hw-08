@@ -15,21 +15,7 @@
     }
 }
 
-.navigation__link--current {
-    color: var(--accent);
-    display: block;
-    position: relative;
-        &::after {
-            position: absolute;
-            content: '';
-            display: block;
-            width: 100%;
-            height: 4px;
-            background-color: var(--accent);
-            border-radius: 2px;
-            bottom: -1px;
-        }
-}
+
 .navigation {
     display: none;
 
@@ -50,6 +36,22 @@
         &:hover, &:focus {
         color: var(--accent);
         };
+}
+.navigation__link--current {
+    color: var(--accent);
+    display: block;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent);
+        border-radius: 2px;
+        bottom: -1px;
+    }
 }
 .navigation__list {
     display: flex;
