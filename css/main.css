@@ -649,6 +649,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -699,6 +700,11 @@ body {
 }
 .team__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .card {
@@ -1178,6 +1184,7 @@ body {
   height: 100vh;
   padding: 48px 0 48px 40px;
   background-color: white;
+  z-index: 99;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
