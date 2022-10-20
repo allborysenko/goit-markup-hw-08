@@ -674,6 +674,7 @@ body {
 }
 
 .team__img {
+  display: block;
   max-width: 100%;
 }
 @media screen and (min-width: 480px) {
