@@ -102,11 +102,28 @@
         margin-left: 10px;
     }
 }
-// *******
 .filter {
     @extend %centred;
+    margin-bottom: 40px;
+    
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
-    margin-bottom: 50px;
+    @include tablet{
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+.filter__item:nth-child(n+4){
+    margin-top: 15px;
+    @include tablet {
+        margin-top: 0;
+    }
 }
 
 .filter__item:not(:last-child) {
