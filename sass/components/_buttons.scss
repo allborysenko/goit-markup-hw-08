@@ -105,11 +105,10 @@
 .filter {
     @extend %centred;
     margin-bottom: 40px;
-    
-    @include mobile {
+
         flex-wrap: wrap;
         justify-content: flex-start;
-    }
+
 
     @include tablet{
         margin-bottom: 30px;
@@ -119,8 +118,18 @@
         margin-bottom: 50px;
     }
 }
+.filter__item {
+    @media screen and (max-width: 479px){
+        margin-bottom: 15px;
+    }
+
+}
 .filter__item:nth-child(n+4){
+    @include mobile{
     margin-top: 15px;
+
+    }
+    
     @include tablet {
         margin-top: 0;
     }
