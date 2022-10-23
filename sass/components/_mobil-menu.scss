@@ -13,7 +13,6 @@
 }
 .menu-container.is-open{
     transform: translateX(0);
-
 }
 
 .menu-toggle{
@@ -81,7 +80,7 @@
     &:not(:last-child){
         margin-right: 5px;
         }
-    
+        
     @include mobile {
         padding-right: 10px;
     }

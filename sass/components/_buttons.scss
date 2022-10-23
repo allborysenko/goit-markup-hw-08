@@ -31,8 +31,6 @@
     width: 30px;
     height: 30px;
     fill: var(--black-text);
-   
-
     cursor: pointer;
 }
 .modal__icon-close {
@@ -54,7 +52,6 @@
     border-radius: 4px;
     letter-spacing: 0.06em;
     color: var(--white-text);
-
     border: none;
     margin: 0 auto;
     cursor: pointer;
@@ -105,9 +102,8 @@
 .filter {
     @extend %centred;
     margin-bottom: 40px;
-
-        flex-wrap: wrap;
-        justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
 
     @include tablet{
@@ -127,7 +123,6 @@
 .filter__item:nth-child(n+4){
     @include mobile{
     margin-top: 15px;
-
     }
     
     @include tablet {
