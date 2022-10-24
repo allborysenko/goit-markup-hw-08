@@ -962,6 +962,11 @@ body {
 .sing-up {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .sing-up {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sing-up {
     margin-bottom: 0;
